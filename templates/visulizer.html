@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CancerRx</title>
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fancybox.css' %}">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic%7cRoboto:400,100italic,100,300,300italic,400italic,500,500italic,700,700italic,900,900italic%7cOpen+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 holder">
+						<!-- logo of the page -->
+						<div class="logo"><a href="#"><img src="{% static 'images/logo_website_logo.png' %}" alt="LAW FIRM THEME FOR Law"></a></div>
+						<a href="#" class="nav-opener visible-xs"><i class="fa fa-bars"></i></a>
+						<div class="nav-holder">
+							
+							<!-- nav of the page -->
+							<nav id="nav">
+								<ul class="list-inline">
+									<li><a href="http://127.0.0.1:8000/" class="smoothanchor">Back to home</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- banner-block of the page -->
+		<div class="banner-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 banner-box">
+
+					</div>
+				</div>
+			</div>
+			<div class="bg-stretch" style="height: 500px;">
+				<img src="{% static './images/20201021-tfoe-koller-stocksy_txp31067d4cv9s200_large_3176781.jpg' %}" alt="image description" style="object-fit: cover; width: 100%; height: 100%;">
+			</div>
+			
+		</div>
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<!-- news-posts of the page -->
+			<div class="container news-posts">
+				<div class="row">
+					<!-- content of the page -->
+					<div class="col-sm-8 col-md-9 col-xs-12" id="content">
+						<article class="event-post">
+
+							<h2><a href="#">Visualizing </a></h2>
+
+							<p>Aberrant activation of mTOR signaling has been implicated in the development and progression of several types of cancer, including breast cancer, prostate cancer, lung cancer, renal cell carcinoma, and others. As a result, mTOR inhibitors have been developed as a class of anticancer drugs.</p>
+							<p>Two main classes of mTOR inhibitors have been developed: rapalogs and ATP-competitive inhibitors. Rapalogs, such as everolimus and temsirolimus, bind to the FKBP12 protein and inhibit the activity of mTOR complex 1 (mTORC1), resulting in reduced protein synthesis and cell proliferation. ATP-competitive inhibitors, such as sapanisertib and vistusertib, directly inhibit the kinase activity of mTOR and target both mTORC1 and mTOR complex 2 (mTORC2).</p>
+							<p>Several mTOR inhibitors have been approved for the treatment of various types of cancer. For example, everolimus is approved for the treatment of advanced renal cell carcinoma, pancreatic neuroendocrine tumors, and breast cancer, while temsirolimus is approved for the treatment of advanced renal cell carcinoma. Other mTOR inhibitors are currently being evaluated in clinical trials for the treatment of different types of cancer.</p>
+                            <p>While mTOR inhibitors have shown promise in the treatment of cancer, they can also have side effects, such as immunosuppression, metabolic alterations, and others. Ongoing research is aimed at developing more effective and targeted mTOR inhibitors, as well as identifying biomarkers to predict response to treatment and guide patient selection.</p>
+						</article>
+
+					</div>
+					<!-- leave-comment of the page -->
+					<div class="leave-comment">
+						<div id="canvasContainer"></div>
+
+					</div>
+					<!-- comments-form of the page -->
+
+				</div>
+			</div>
+			<!-- sidebar of the page -->
+
+	</div>
+	</div>
+
+	</main>
+
+	<!-- footer of the Page -->
+	<footer id="footer">
+		<div class="container holder">
+			<div class="row">
+				<div class="col-sm-5 col-xs-12 copyrights">
+					<!-- <p>&copy; Copyrights Reserved To <a href="www.htmlbeans.com">HT</a>.</p> -->
+				</div>
+				<!-- <div class="col-sm-7 col-xs-12 copyrights">
+					<ul class="footer-nav list-inline">
+						<li><a href="team.html">Team</a></li>
+						<li><a href="team.html">Documentation</a></li>
+					</ul>
+				</div> -->
+			</div>
+		</div>
+	</footer>
+	<div class="pre-loader"><span class="preloader1"></span></div>
+	</div>
+	<!-- include jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+	<script type="text/javascript" src="{% static 'js/jquery-1.11.2.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.main.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.datepicker.js' %}"></script>
+	<script type="text/javascript">
+		if (navigator.userAgent.match(/IEMobile\/10\.0/) || navigator.userAgent.match(/MSIE 10.*Touch/)) {
+			var msViewportStyle = document.createElement('style')
+			msViewportStyle.appendChild(
+				document.createTextNode(
+					'@-ms-viewport{width:auto !important}'
+				)
+			)
+			document.querySelector('head').appendChild(msViewportStyle)
+		}
+	</script>
+</body>
+
+</html>

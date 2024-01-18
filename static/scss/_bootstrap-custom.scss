@@ -1,0 +1,156 @@
+// custom variables and override bootstrap variables
+
+$white:						#fff;
+$black:						#000;
+$black2:					#353535;
+$black3:					#171717;
+$black4:					#111111;
+$light-gray:				#9c9b9b;
+$light-gray2:				#8f8e8e;
+$light-gray3:				#a7a7a7;
+$light-gray4:				#f1f1f1;
+$light-gray5:				#8d8d8d;
+$light-gray6:				#cecece;
+$light-gray7:				#f3f3f3;
+$light-gray8:				#fafafa;
+$light-gray9:				#f5f5f5;
+$light-gray10:				#ebebeb;
+$light-gray11:				#959595;
+$light-gray12:				#b6b6b6;
+$light-gray13:				#b1b1b1;
+$light-gray14:				#f8f7f7;
+$light-gray15:				#ddd;
+$light-gray16:				#7d8c96;
+$light-gray17:				#d1d3d5;
+$light-gray18:				#fbfcfc;
+$light-gray19:				#a1b1bc;
+$light-gray20:				#4e5869;
+$light-gray21:				#eee;
+$dark-gray:					#252525;
+$dark-gray2:				#464646;
+$dark-gray3:				#363636;
+$brown:						#db5940;
+$dark-brown:				#c34128;
+$dark-brown2:				#c24027;
+$yellow:					#fec42d;
+$dark-yellow:				#d99b07;
+$light-yellow:				#fff9da;
+$jet:						#222222;
+$tuatara:					#38393a;
+$yellow-green:				#8ac53e;
+$white-smoke:				#F5F5F5;
+$fuscous-gray:				#515151;
+$pistachio:					#9fcf63;
+$black-haze:				#f7f7f7;
+$iron:						#ccc;
+$shark:						#282828;
+$dollar-bill:				#92c451;
+$stack:						#8e8e8e;
+$nobel:						#b4b4b4;
+$storm-dust:				#646465;
+$iron-2:					#d7d7d7;
+$davy-grey:					#545759;
+$pale-slate:				#c3c3c3;
+$gray-nurse:				#e9e9e9;
+$light-pink:				#fec0b7;
+$dark-orange:				#df3c22;
+$light-green:				#e1f9b7;
+$dark-green:				#649d01;
+
+
+/* Scaffolding */
+$text-color:				#555;
+$link-color:				#d95b43;
+$link-hover-color:			#ca563f;
+$body-bg:					$white;
+
+/* Typography */
+$font-size-base:			14px;
+$base-line-height:			24px;
+$font-family-base:			'Open Sans', 'Arial', 'Helvetica', sans-serif;
+$font-sans-pro:				'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
+$font-roboto: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+$font-size-h1:45px;
+$font-size-h2:42px;
+$font-size-h3:30px;
+$font-size-h4:18px;
+$font-size-h5:16px;
+$font-size-h6:14px;
+$headings-font-family:$font-sans-pro;
+$headings-font-weight: 700;
+$headings-color:#333;
+
+/* Iconography */
+$icon-font-path: "../fonts/";
+
+/* Navbar */
+
+$navbar-height:23px;
+$navbar-margin-bottom: 0;
+$navbar-padding-horizontal: 0;
+$navbar-padding-vertical: 0;
+$navbar-default-color:$black2;
+$navbar-default-bg: transparent;
+$navbar-default-border: 0;
+$navbar-default-link-color: $black2;
+$navbar-default-link-hover-color: $white;
+$navbar-default-link-active-color: $white;
+$navbar-default-link-active-bg: transparent;
+$navbar-default-toggle-hover-bg:$brown;
+$navbar-default-toggle-icon-bar-bg: $white;
+$navbar-border-radius:0;
+$navbar-height:auto;
+$navbar-default-link-hover-bg:transparent;
+$navbar-default-link-active-bg:transparent;
+
+/* Buttons */
+
+$btn-font-weight: 700;
+$btn-default-color:$black;
+$btn-default-bg:transparent;
+$btn-default-border:$black;
+$btn-primary-color:$white;
+$btn-primary-bg:$black;
+$btn-primary-border:transparent;
+
+/* Forms */
+
+$input-bg: $white;
+$input-color:$text-color;
+$input-color-placeholder: $text-color;
+$input-border:transparent;
+$input-border-radius: 3px;
+$input-border-focus: transparent;
+$input-height-base: 40px;
+
+/* Forms */
+
+$pagination-color:$white;
+$pagination-bg:$white;
+$pagination-border: transparent;
+$pagination-hover-color:$white;
+$pagination-hover-bg:$black;
+$pagination-hover-border: transparent;
+$pagination-active-color:$white;
+$pagination-active-bg:$black;
+$pagination-active-border:transparent;
+
+/* Tabs */
+
+$nav-tabs-border-color:$headings-color;
+$nav-tabs-link-hover-border-color:transparent;
+$nav-tabs-active-link-hover-bg:$brown;
+$nav-tabs-active-link-hover-color:$white;
+$nav-tabs-active-link-hover-border-color:transparent;
+
+/* container sizes */
+
+$grid-gutter-width:      30px;
+$screen-lg:        1210px;
+$container-lg:       1200px;
+
+/* Media queries breakpoints */
+
+$desktop: 1170px;
+$tablet: 991px;
+$mobile: 767px;

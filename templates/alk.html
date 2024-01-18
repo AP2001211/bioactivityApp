@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CancerRx</title>
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fancybox.css' %}">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic%7cRoboto:400,100italic,100,300,300italic,400italic,500,500italic,700,700italic,900,900italic%7cOpen+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 holder">
+						<!-- logo of the page -->
+						<div class="logo"><a href="#"><img src="{% static 'images/logo_website_logo.png' %}" alt="LAW FIRM THEME FOR Law"></a></div>
+						<a href="#" class="nav-opener visible-xs"><i class="fa fa-bars"></i></a>
+						<div class="nav-holder">
+							
+							<!-- nav of the page -->
+							<nav id="nav">
+								<ul class="list-inline">
+									<li><a href="http://127.0.0.1:8000/" class="smoothanchor">Back to home</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- banner-block of the page -->
+		<div class="banner-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 banner-box">
+
+					</div>
+				</div>
+			</div>
+			<div class="bg-stretch" style="height: 500px;">
+				<img src="{% static './images/20201021-tfoe-koller-stocksy_txp31067d4cv9s200_large_3176781.jpg' %}" alt="image description" style="object-fit: cover; width: 100%; height: 100%;">
+			</div>
+			
+		</div>
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<!-- news-posts of the page -->
+			<div class="container news-posts">
+				<div class="row">
+					<!-- content of the page -->
+					<div class="col-sm-8 col-md-9 col-xs-12" id="content">
+						<article class="event-post">
+
+							<h2><a href="https://www.rcsb.org/3d-view/4Z55/1">About ALK </a></h2>
+
+							<p>ALK (anaplastic lymphoma kinase) is a protein that plays a role in the development and function of nerve cells in the brain. It is a receptor tyrosine kinase that is activated by binding to specific ligands. ALK was originally identified as a gene that is fused with the NPM1 gene in anaplastic large cell lymphoma (ALCL), a type of non-Hodgkin lymphoma. This fusion protein, known as NPM-ALK, has constitutive kinase activity and promotes cell proliferation and survival.</p>
+							<p>In addition to ALCL, ALK fusions have also been identified in a subset of non-small cell lung cancer (NSCLC) cases, particularly in younger patients with adenocarcinoma histology who are non-smokers or light smokers. The most common ALK fusion partner in NSCLC is the echinoderm microtubule-associated protein-like 4 (EML4) gene, resulting in the EML4-ALK fusion protein. </p>
+							<p>Targeting ALK with specific inhibitors has been shown to be an effective treatment strategy in ALK-positive ALCL and NSCLC. Several ALK inhibitors have been developed and approved for the treatment of ALK-positive NSCLC, including crizotinib, ceritinib, alectinib, brigatinib, and lorlatinib. These drugs inhibit the activity of the ALK kinase, leading to reduced proliferation and survival of ALK-positive cancer cells. However, the development of resistance to ALK inhibitors remains a challenge, and ongoing research is focused on identifying strategies to overcome this resistance and improve outcomes for patients with ALK-positive cancers.</p>
+						</article>
+
+					</div>
+					<!-- leave-comment of the page -->
+					<div class="leave-comment">
+						<p>Choose a text file to upload:</p>
+						<form method = "post" action="/alkFile/result" enctype="multipart/form-data">
+							{% csrf_token %}
+							<!-- <label for="myfile">Select a file:</label> -->
+							<input type="file" id="myfile" name="myfile"><br><br>
+							<input type="submit">
+							{% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+						  </form>
+
+					</div>
+					<!-- comments-form of the page -->
+
+				</div>
+			</div>
+			<!-- sidebar of the page -->
+
+	</div>
+	</div>
+
+	</main>
+
+	<!-- footer of the Page -->
+	<footer id="footer">
+		<div class="container holder">
+			<div class="row">
+				<div class="col-sm-5 col-xs-12 copyrights">
+					<!-- <p>&copy; Copyrights Reserved To <a href="www.htmlbeans.com">HT</a>.</p> -->
+				</div>
+				<!-- <div class="col-sm-7 col-xs-12 copyrights">
+					<ul class="footer-nav list-inline">
+						<li><a href="http://127.0.0.1:8000/Team">Team</a></li>
+						<li><a href="team.html">Documentation</a></li>
+					</ul>
+				</div> -->
+			</div>
+		</div>
+	</footer>
+	<div class="pre-loader"><span class="preloader1"></span></div>
+	</div>
+	<!-- include jQuery -->
+	<script type="text/javascript" src="{% static 'js/jquery-1.11.2.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.main.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.datepicker.js' %}"></script>
+	<script type="text/javascript">
+		if (navigator.userAgent.match(/IEMobile\/10\.0/) || navigator.userAgent.match(/MSIE 10.*Touch/)) {
+			var msViewportStyle = document.createElement('style')
+			msViewportStyle.appendChild(
+				document.createTextNode(
+					'@-ms-viewport{width:auto !important}'
+				)
+			)
+			document.querySelector('head').appendChild(msViewportStyle)
+		}
+	</script>
+</body>
+
+</html>

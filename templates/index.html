@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CancerRx</title>
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fancybox.css' %}">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic%7cRoboto:400,100italic,100,300,300italic,400italic,500,500italic,700,700italic,900,900italic%7cOpen+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 holder">
+						<!-- logo of the page -->
+						<div class="logo"><a href="#"><img src="{% static 'images/logo_website_logo.png' %}" alt="LAW FIRM THEME FOR Law"></a></div>
+						<a href="#" class="nav-opener visible-xs"><i class="fa fa-bars"></i></a>
+						<div class="nav-holder">
+							
+							<!-- nav of the page -->
+							<nav id="nav">
+								<ul class="list-inline">
+									<li><a href="#models" class="smoothanchor">Models</a></li>
+									<!-- <li><a href="#learn_more" class="smoothanchor">Learn more</a></li> -->
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- main-gallery of the Page -->
+		<div class="main-gallery beans-gallery">
+			<div class="beans-mask">
+				<div class="beans-slideset">
+					<div class="beans-slide win-height">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 slide-content  win-min-height">
+									<header class="slide-heading2">
+										<h1>Revolutionizing cancer treatment with advanced machine learning models.</h1>
+									</header>
+								</div>
+							</div>
+						</div>
+						<div class="bg-stretch">
+							<img src="{% static 'images/shutterstock_1464187604.jpg' %}" alt="image description">
+						</div>
+					</div>
+					
+					<!-- <div class="beans-slide  win-height">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 slide-content  win-min-height">
+									<header class="slide-heading2">
+										<h1>if there were no bad people, there would be no good lawyers</h1>
+									</header>
+								</div>
+							</div>
+						</div>
+						<div class="bg-stretch">
+							<img src="http://placehold.it/1600x702" alt="image description">
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<!-- <div class="btn-box">
+				<a class="btn-prev" href="#"><i class="fa fa-angle-left"></i></a>
+				<a class="btn-next" href="#"><i class="fa fa-angle-right"></i></a>
+			</div> -->
+		</div>
+				
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<!-- container-block of the page -->
+			<section class="container container-block" id="models">
+				<header class="row main-heading">
+					<div class="col-xs-12">
+						<h2>OUR MODELS</h2>
+					</div>
+				</header>
+				<!-- services-holder of the page -->
+				<div class="row services-holder">
+					<div class="col-sm-3 col-xs-12 services-col">
+						<!-- <div class="img-box"></div> -->
+						<h2><a href="breast_cancer.html">Aromatase</a></h2>
+						<p>Aromatase is an enzyme that plays a key role in the production of estrogen, a hormone that is known to promote the growth and proliferation of breast cancer cells. Aromatase inhibitors are a class of drugs that are used to treat hormone receptor-positive breast cancer, which accounts for about 70% of all breast cancer cases. </p>
+                        <form action="aromataseFile">
+                            <button style="border: 0%;"><a class="btn btn-default">Test Model</a></button>
+                        </form>
+						
+					</div>
+					<div class="col-sm-3 col-xs-12 services-col approch">
+						<!-- <div class="img-box"></div> -->
+						<h2><a href="services.html">ALK</a></h2>
+						</p>Anaplastic lymphoma kinase. ALK was originally identified as a gene that is fused with the NPM1 gene in anaplastic large cell lymphoma (ALCL), a type of non-Hodgkin lymphoma. This fusion protein, known as NPM-ALK, has constitutive kinase activity and promotes cell proliferation and survival.</p>
+					<form action="alkFile">
+						<button style="border: 0%;"><a class="btn btn-default">Test Model</a></button>
+					</form>
+					</div>
+					<div class="col-sm-3 col-xs-12 services-col rules">
+						<!-- <div class="img-box"></div> -->
+						<h2><a href="services.html">mTOR</a></h2>
+						<p>mammalian Target Of Rapamycin, is a protein kinase that is involved in several cellular processes, including cell growth, proliferation, metabolism, and autophagy. It functions as a central regulator of cell signaling pathways and is activated by a variety of stimuli, such as growth factors, nutrients, and stress.</p>
+						<form action="mTORFile">
+							<button style="border: 0%;"><a class="btn btn-default">Test Model</a></button>
+						</form>
+					</div>
+					<div class="col-sm-3 col-xs-12 services-col client">
+						<!-- <div class="img-box"></div> -->
+						<h2><a href="services.html">PI3K</a></h2>
+						<p>Phosphoinositide 3-kinase, is a protein kinase that is involved in several cellular processes, including cell growth, proliferation, survival, and metabolism. It functions as a signaling molecule and is activated by a variety of stimuli, such as growth factors, hormones, and nutrients.</p>
+						<form action="PI3KFile">
+							<button style="border: 0%;"><a class="btn btn-default">Test Model</a></button>
+						</form>
+					</div>
+				</div>
+			</section>
+		
+		
+			<section class="container container-block benifits" id="learn_more">
+				<div class="row">
+					<div class="col-sm-8 col-xs-12">
+						<header class="main-heading benifits">
+							<h2>advantages of drug discovery using AI ML</h2>
+						</header>
+						<!-- benifits-block of the page -->
+						<div class="benifits-block">
+							<article class="benifits-col">
+								<h3><a href="#">Increased efficiency</a></h3>
+								<p>AI/ML algorithms can process and analyze vast amounts of data quickly and accurately, which can accelerate the drug discovery process. This allows researchers to identify promising compounds more efficiently and focus their efforts on the most promising leads.</p>
+							</article>
+							<article class="benifits-col">
+								<h3><a href="#">Reduced costs</a></h3>
+								<p>Traditional drug discovery is an expensive and time-consuming process. By using AI/ML, researchers can reduce the cost of drug development by reducing the number of compounds that need to be synthesized and tested in the lab.</p>
+							</article>
+							<article class="benifits-col">
+								<h3><a href="#">Improved accuracy</a></h3>
+								<p>AI/ML algorithms can analyze complex datasets and identify patterns that may not be apparent to human researchers. This can lead to more accurate predictions of a compound's efficacy and safety, reducing the risk of failure in later stages of development.</p>
+							</article>
+							<article class="benifits-col">
+								<h3><a href="#">Increased success rate</a></h3>
+								<p>By identifying the most promising compounds earlier in the drug discovery process, AI/ML can increase the success rates of drug development. This can lead to more effective treatments for a variety of diseases, including those that are currently difficult to treat.</p>
+							</article>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-12" >
+						<header class="main-heading benifits">
+							<h2>How machine learning is transforming drug discovery</h2>
+						</header>
+						<div class="video-block2">
+							<iframe  src="https://www.youtube.com/embed/3GiYV6j4g84" title="Daphne Koller: How machine learning is transforming drug discovery" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							 
+							</a>
+						  </div>
+						  
+					</div>
+				</div>
+			</section>
+			
+
+			
+			
+			
+			
+			
+		</main>
+		
+			
+		<!-- footer of the Page -->
+		<footer id="footer">
+			<div class="container holder">
+				<div class="row">
+					<div class="col-sm-5 col-xs-12 copyrights">
+						<!-- <p>&copy; Copyrights Reserved To <a href="www.htmlbeans.com">HT</a>.</p> -->
+					</div>
+					<div class="col-sm-7 col-xs-12 copyrights">
+						<!-- <ul class="footer-nav list-inline">
+							<li><a href="team.html">Team</a></li>
+							<li><a href="team.html">Documentation</a></li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="pre-loader"><span class="preloader1"></span></div>
+		<div class="popup-holder">
+			<div id="video-popup1" class="lightbox video-lightbox videoarea">
+			  <div class="video-wrapper">
+				<iframe id="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/3GiYV6j4g84" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+			  </div>
+			</div>
+			<a href="#" class="play-button" onclick="showLightbox()">Play Video</a>
+		  </div>
+		  
+		<div class="pre-loader"><span class="preloader1"></span></div>
+	</div>
+	<!-- include jQuery -->
+	<script type="text/javascript" src="{% static 'js/jquery-1.11.2.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.main.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.datepicker.js' %}"></script>
+	<script type="text/javascript">
+	    if (navigator.userAgent.match(/IEMobile\/10\.0/) || navigator.userAgent.match(/MSIE 10.*Touch/)) {
+	        var msViewportStyle = document.createElement('style')
+	        msViewportStyle.appendChild(
+	            document.createTextNode(
+	                '@-ms-viewport{width:auto !important}'
+	            )
+	        )
+	        document.querySelector('head').appendChild(msViewportStyle)
+	    }
+	</script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript">
+        var lat;
+        var lng;
+        var map;
+        var styles = [{"stylers":[{"saturation":-100},{"gamma":1}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"saturation":50},{"gamma":0},{"hue":"#50a5d1"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#333333"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"weight":0.5},{"color":"#333333"}]},{"featureType":"transit.station","elementType":"labels.icon","stylers":[{"gamma":1},{"saturation":50}]}];
+
+        //type your address after "address="
+        jQuery.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address=london, baker street, 221b&sensor=false', function(data) {
+            lat = data.results[0].geometry.location.lat;
+            lng = data.results[0].geometry.location.lng;
+        }).complete(function(){
+            dxmapLoadMap();
+        });
+
+        function attachSecretMessage(marker, message)
+        {
+            var infowindow = new google.maps.InfoWindow(
+                { content: message
+                });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map,marker);
+            });
+        }
+
+        window.dxmapLoadMap = function()
+        {
+            var center = new google.maps.LatLng(lat, lng);
+            var settings = {
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                zoom: 16,
+                draggable: false,
+                scrollwheel: false,
+                center: center,
+                styles: styles 
+            };
+            map = new google.maps.Map(document.getElementById('map'), settings);
+
+            var marker = new google.maps.Marker({
+                position: center,
+                title: 'Map title',
+                map: map
+            });
+            marker.setTitle('Map title'.toString());
+        //type your map title and description here
+        attachSecretMessage(marker, '<h3>Map title</h3>Map HTML description');
+        }
+    </script>
+</body>
+</html>
